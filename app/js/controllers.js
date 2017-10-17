@@ -1,5 +1,5 @@
 angular.module('ecommerce', ['ngRoute'])
-    .config(function ($routeProvider){
+    .config(function($routeProvider){
         $routeProvider
             .when('/', {
                 templateUrl: '/app/pages/bemvindo.html',
