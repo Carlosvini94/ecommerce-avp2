@@ -1,0 +1,29 @@
+<div class="container" ng-init="init()">
+    <h4>Bem Vindo!</h4>
+    <div class="row">
+        <div class="col s3">
+            <p>
+                SHOE PER DAY é uma empresa é uma Sapataria que oferece diversos tipos e marcas de calçados. Produtos de excelente qualidade e que oferecem máximo conforto para você.
+            </p>
+        </div>
+        <div class="col s9">
+            <div class="row">
+                <div class="col s6" ng-repeat="c in listaCategorias">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="{{c.imagem}}">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">{{c.nome}}<i class="material-icons right">...</i></span>
+                            <p><a href="#">Ver Produto</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">{{p.nome}}<i class="material-icons right">close</i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        

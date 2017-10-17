@@ -30,6 +30,13 @@
                     
                 }
         }
+        
+        header("Access-Control-Allow-Origin: *");
+        header("Content-type: application/json; charset=UTF-8");
+        
+        echo json_encode($lista);
+        exit();
+        
     }catch (Exception $e) {
         echo "Erro ao buscar categorias. " . $e->getMessage();
     }
